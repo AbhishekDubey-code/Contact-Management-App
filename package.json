@@ -11,8 +11,11 @@
   "author": "abhishek dubey",
   "license": "ISC",
   "dependencies": {
+    "async-error-handler": "^1.0.7",
     "dotenv": "^16.4.7",
     "express": "^4.21.1",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^8.8.4",
     "nodemon": "^3.1.7"
   }
 }
