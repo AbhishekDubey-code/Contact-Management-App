@@ -14,7 +14,8 @@ app.use(express.json());
 //     res.status(200).json({message:"hello world!"});
 // }); for not using /api/contacts again we write below code
 
-app.use("/api/contacts", require("./route/contactRoutes"))
+app.use("/api/contacts", require("./route/contactRoutes"));
+app.use("/api/users", require("./route/userRoutes"));
 app.use(errorHandler);
 
 app.listen(port,()=>{

@@ -4,7 +4,6 @@
 const asyncHandler = require("express-async-handler");
 const Contact =require("../models/contactModel");// importing the model before crud operations.
 const getContacts =asyncHandler(async(req,res)=>{
-    
     const contacts =await Contact.find();
     res.status(200).json(contacts);
 });
